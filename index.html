@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Large Language Models for Graph (LLMs4Graph) Workshop</title>
+  <title>RAG Meets LLMs: Towards Retrieval-Augmented Large Language Models</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -31,7 +31,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">LLMs4Graph</a>
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">RAG-Meets-LLMs</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
         data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
         aria-label="Toggle navigation">
@@ -44,19 +44,10 @@
             <a class="nav-link js-scroll-trigger" href="#home">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#toi">Topics of Interest</a>
+            <a class="nav-link js-scroll-trigger" href="#toi">TARGET AUDIENCE</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#dates">Important Dates</a>
-          </li>
-    <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#submission">Submission Details</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#program">Workshop Program & Proceedings</a>
-          </li>
-    <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#keynote">Keynote Speakers</a>
+            <a class="nav-link js-scroll-trigger" href="#dates">Event Dates</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#team">Organizers</a>
@@ -73,8 +64,9 @@
   <header class="masthead">
     <div class="container">
       <div class="intro-text">
-        <div class="intro-heading text-uppercase">Large Language Models for Graph Learning</div>
-  <div class="intro-lead-in">LLMs4Graph workshop at <a href="https://www2024.thewebconf.org/">WWW'24</a></div>
+        <div class="intro-heading text-uppercase">RAG Meets LLMs: Towards Retrieval-Augmented
+          Large Language Models</div>
+  <div class="intro-lead-in">RAG-Meets-LLMs Tutorial at <a href="https://advanced-recommender-systems.github.io/RAG-Meets-LLMs/">KDD'24</a></div>
          <!-- <div class="intro-lead-in">Proceedings are available <a href="http://ceur-ws.org/Vol-2635/">on-line</a>.</div> -->
         <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#home">Tell Me More!</a>
       </div>
@@ -89,12 +81,12 @@
           <h2 class="section-heading text-uppercase">About</h2>
           <!--<h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>-->
           <p style="text-align:justify">
-      Graphs are widely applied to encode entities with various relations in web applications such as social media and recommender systems. Meanwhile, graph learning-based technologies, such as graph neural networks, are demanding to support the analysis, understanding and usage of the data in graph structures. Recently, the boom of language foundation models, especially Large Language Models (LLMs),  has advanced several main research areas in artificial intelligence, such as natural language processing, graph mining and recommender systems. The synergy between LLMs and graph learning holds great potential to prompt the research in both areas. For example, LLMs can facilitate existing graph learning models by providing high-quality textual features for entities and edges, or enhancing the graph data with encoded knowledge and information. It may also innovate with novel problem formulations on graph-related tasks. Due to the research significance as well as the potentials, the convergent area of LLMs and graph learning has attracted considerable research attention.            </p>
-
-          <p style="text-align:justify">
-    By inviting experts to deliver keynote speeches, the LLMs4Graph workshop on WWW'24 aims to share the latest innovations and breakthroughs on the target topic, serving as a beacon for current and future research. With the oral and poster sessions, it provides a communication platform for researchers in the areas of either natural language processing or graph learning to exchange their ideas, summarize existing works and discuss prospective aspects. It will focus on the under-explored ability of LLMs on graph learning tasks including modeling, prediction and reasoning. By including participants from both the academia and industry, this workshop tries to narrow the gaps between the application attempts and methodology studies, more importantly, to push the boundaries of next-gen graph methods and AI-driven decision making. 
-
+              As one of the most advanced techniques in AI, Retrieval-Augmented Generation (RAG) techniques can offer reliable and up-to-date external knowledge, providing huge convenience for numerous tasks. Particularly in the era of AI-generated content (AIGC), the powerful capacity of retrieval in RAG in providing additional knowledge enables retrieval-augmented generation to assist existing generative AI in producing high-quality outputs. Recently, large Language Models (LLMs) have demonstrated revolutionary abilities in language understanding and generation, while still facing inherent limitations, such as hallucinations and out-of-date internal knowledge. Given the powerful abilities of RAG in providing the latest and helpful auxiliary information, retrieval-augmented large language models have emerged to harness external and authoritative knowledge bases, rather than solely relying on the model's internal knowledge, to augment the generation quality of LLMs. 
+            </p>
+            <p style="text-align:justify">
+              In this tutorial, we comprehensively review existing research studies in retrieval-augmented large language models (<b>RA-LLMs</b>), covering three primary technical perspectives: architectures, training strategies, and applications. As the preliminary knowledge, we briefly introduce the foundations and recent advances of LLMs. Then, to illustrate the practical significance of RAG for LLMs, we categorize mainstream relevant work by application areas, detailing the challenges of each and the corresponding capabilities of RA-LLMs specifically. Finally, to deliver deeper insights, we discuss current limitations and several promising directions for future research.
           </p>
+          <p style="text-align:justify">Our Survey Paper: <a href="https://advanced-recommender-systems.github.io/RAG-Meets-LLMs">RAG-Meets-LLMs: Towards Retrieval-Augmented Large Language Models</a></p>
           <br />
         </div>
       </div>
@@ -105,13 +97,12 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Topics of Interest</h2>
+          <h2 class="section-heading text-uppercase">TARGET AUDIENCE AND PREREQUISITES FOR THE TUTORIAL</h2>
           <div style="text-align:justify">
      
-     Researchers in the graph learning or relevant communities have preliminarily tested the ability of current LLMs for handling graph structured data or different ways to empower the existing LLMs for complex graph tasks given current weaknesses. Despite of the prosect as well as the achievement so far, the research area of LLMs for learning on graph is still emerging and under-explored.  In order to encourage researchers with relevant background to get engaged and make contributions, we organize the first-of-its-kind LLMs for Graph Learning workshop, hoping to receive insights from both the academia and industry. 
-      </p>
+            The audience of this tutorial could be college students, researchers in academic institutions, and industrial AI labs who are interested in Large Language Models (LLMs) and Retrieval-Augmented Generation (RAG). The audience is expected to have basic knowledge of artificial intelligence, language models, and retrieval techniques. However, this tutorial will be presented at the college junior/senior level so that it can be comfortably followed by academic researchers or industrial practitioners who are interested in this emerging field but not quite familiar with it. After attending this tutorial, the audience is expected to have a comprehensive understanding of Retrieval-Augmented Large Language Models and learn how to design a solution for a customized problem.       </p>
       <p style="text-align:justify">
-     The workshop will be welcoming theory and methodology papers falling into the scope of following themes, including but not limited to:
+     <!-- The workshop will be welcoming theory and methodology papers falling into the scope of following themes, including but not limited to:
       <br />
             <ul>
         <li>Generative Models on Graph-structured Data</li>
@@ -139,7 +130,7 @@
         <li>Transportation/mobility networks (e.g., traffic prediction)</li>
             </ul>
             <br /><br />
-         </p>
+         </p> -->
           </div>
         </div>
       </div>
@@ -151,17 +142,9 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Important Dates</h2>
+          <h2 class="section-heading text-uppercase">Event Dates</h2>
           <div style="text-align:left">
-           <ul>
-              <li>Submission Deadline: <b>February 25, 2024</b> </li>
-              <li>Notification of Acceptance: <b>March 4th, 2024</b> </li>
-              <li>Camera-ready Paper Due: <b>March 11th, 2024</b> </li>
-              <li>LLMs4Graph at WWW'24 Workshop Day: <b>Tuesday, May 14, 2024, Half-Day (AM)</b> </li>
-
-              <li><b>A best paper will be invited for possible inclusion, in an expanded and revised form, in the <a href="https://www.ieeesmc.org/wp-content/uploads/2024/02/CFP_SI-on-Large-Scale-Knowledge-Discovery-in-Computational-Social-Systems.pdf"> Special Issue on Large-Scale Knowledge Discovery in Computational Social Systems (https://www.ieeesmc.org/wp-content/uploads/2024/02/CFP_SI-on-Large-Scale-Knowledge-Discovery-in-Computational-Social-Systems.pdf), IEEE Transactions on Computational Social Systems TCSS (JCR Q1). </a> </b> </li>
-
-            </ul>
+            <b>TBD</b></p>
             <!-- <div style="text-align:center"><a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger"
                 href="">Read
                 CFP</a> -->
@@ -175,91 +158,6 @@
 
 
 
-  <!-- Portfolio Grid -->
-  <section class="bg-light" id="submission">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Submission Details</h2>
-          <div style="text-align:justify">
-          Workshop papers should not exceed 12 pages in length (maximum 8 pages for the main paper content + maximum 2 pages for appendixes + maximum 2 pages for references). Papers must be submitted in PDF format according to the ACM template published in the ACM guidelines, selecting the generic “sigconf” sample. The PDF files must have all non-standard fonts embedded. Workshop papers must be self-contained and in English. Submissions will be reviewed double-blind, and author names and affiliations should NOT be listed. Submitted works will be assessed based on their novelty, technical quality, potential impact, and clarity of writing. Please refer to the WWW'24 website for futher details.
-     <!-- <a href="https://wi-lab.com/cyberchair/2022/icdm22/scripts/submit.php?subarea=S04&undisplay_detail=1&wh=/cyberchair/2022/icdm22/scripts/ws_submit.php">Submission Link</a> -->
-    <br /><br />Note that at least one of the authors of the accepted workshop papers must register for the workshop (details to come on the main WWW'24 website). 
-    For questions about submission, please contact us at: wenqifan03@gmail.com
-    
-    <br /><br />To submit your work, please use the following <a href="https://easychair.org/conferences/?conf=thewebconf2024_workshops">Submission Link</a> 
-    
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <section id="program">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Workshop Program</h2>
-
-    <h3 class="section-subheading">Accepted Papers</h3>
-          <ul style="text-align:justify">
-      
-      <li>To be announced</li><br>
-<!--       example as follows -->
-<!--       <li><a href="papers/">E2EG: End-to-End Node Classification Using Graph Topology and Text-based
-Node Attributes</a>. <br>Tu Anh Dinh, Jeroen den Boef, Joran Cornelisse, and Paul Groth</li><br> -->
-      
-          </ul>
-                </ul>
-
-          <h3 class="section-subheading">Workshop Program. (Local time GMT+8 in Singapore at WWW'24).</h3>
-          <div style="text-align:left">
-
-    14:00 - 14:20 Welcome and Opening Remarks <br />
-    14:20 - 15:00 Keynote I - speaker to be announced <br />
-    15:00 - 15:30 Contributed research oral talks<br />
-    <hr>
-    15:30 - 15:50 Break
-    <hr>
-    15:50 - 16:30 Keynote II - speaker to be announced <br />
-    16:30 - 17:20 Contributed research post session
-    15:20 - 16:30 Best paper award ceremony and final remarks <br />
-    </div>
-        </div>
-      </div>
-      
-  </section>
-  <section class='bg-light' id="keynote">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Keynote Speakers</h2>
-           
-    <div class="row">
-            <div class="col-sm-4">
-              <div class="keynote">
-    <a href="https://keynote1.com//"><img src="img/keynote1.png" alt=""></a>
-    <h4><a href="https://keynote1.com//">To be announced</a></h4>
-    <p class="text-muted" style="display:inline">To be announced</p></br>
-    <p class="text-muted" style="display:inline"> To be announced</p></br>
-              </div>    
-            </div>
-
-
-     <div class="col-sm-4">
-              <div class="keynote">
-    <a href="https://keynote2.github.io/"><img src="img/keynote2.png" alt=""></a>
-    <h4><a href="https://keynote2.github.io/">To be announced</a></h4>
-    <p class="text-muted" style="display:inline">To be announced</p></br>
-    <p class="text-muted" style="display:inline">To be announced</p></br>
-              </div>    
-            </div>      
-    
-    </div>  
-  </div>
-  </section>
-  
   <section id="team">
     <div class="container">
 
@@ -270,7 +168,7 @@ Node Attributes</a>. <br>Tu Anh Dinh, Jeroen den Boef, Joran Cornelisse, and Pau
       </div>
       <br>
       <div class="col-lg-12 text-center">
-  <h3 class="section-heading text-uppercase">Workshop Co-Chairs</h3>
+  <h3 class="section-heading text-uppercase">Tutorial TUTORS</h3>
       </div>
       
 <div class="row">
@@ -300,14 +198,58 @@ Node Attributes</a>. <br>Tu Anh Dinh, Jeroen den Boef, Joran Cornelisse, and Pau
 
   <div class="col-sm-4">
           <div class="team-member">
-            <a href="https://www4.comp.polyu.edu.hk/~xiaohuang/"><img style="max-width:none" class="mx-auto" src="img/huangxiao.png" alt=""></a>
-            <h4><a href="https://www4.comp.polyu.edu.hk/~xiaohuang/">Xiao Huang</a></h4>
-            <p class="text-muted" style="display:inline">Assistant Professor</p>
+            <a href="https://sjay-wang.github.io/"><img style="max-width:none" class="mx-auto" src="img/Shijie.jpeg" alt=""></a>
+            <h4><a href="https://sjay-wang.github.io/">Shijie   Wang</a></h4>
+            <p class="text-muted" style="display:inline">PhD Candidate</p>
       <p class="text-muted">The Hong Kong Polytechnic University</p>
             <ul class="list-inline social-buttons">
             </ul>
           </div>
         </div> 
+
+  <div class="col-sm-4">
+    <div class="team-member">
+      <a href="https://biglemon-ning.github.io/"><img style="max-width:none" class="mx-auto" src="img/liangbo.png" alt=""></a>
+      <h4><a href="https://biglemon-ning.github.io/">Liangbo Ning</a></h4>
+      <p class="text-muted" style="display:inline">PhD Student</p>
+<p class="text-muted">The Hong Kong Polytechnic University</p>
+      <ul class="list-inline social-buttons">
+      </ul>
+    </div>
+  </div> 
+
+  <div class="col-sm-4">
+    <div class="team-member">
+      <a href="https://www.polyu.edu.hk/shtm/people/academic-staff/neil-li/"><img style="max-width:none" class="mx-auto" src="img/neil_li.jpg" alt=""></a>
+      <h4><a href="https://www.polyu.edu.hk/shtm/people/academic-staff/neil-li/">Hengyun Li</a></h4>
+      <p class="text-muted" style="display:inline">Associate Professor</p>
+<p class="text-muted">The Hong Kong Polytechnic University</p>
+      <ul class="list-inline social-buttons">
+      </ul>
+    </div>
+  </div> 
+
+  <div class="col-sm-4">
+    <div class="team-member">
+      <a href="https://www.yindawei.com/"><img style="max-width:none" class="mx-auto" src="img/dawei.png" alt=""></a>
+      <h4><a href="https://www.yindawei.com/">Dawei Yin</a></h4>
+      <p class="text-muted" style="display:inline">Senior Director of Engineering</p>
+<p class="text-muted">Baidu inc.</p>
+      <ul class="list-inline social-buttons">
+      </ul>
+    </div>
+  </div> 
+
+  <div class="col-sm-4">
+    <div class="team-member">
+      <a href="https://www.comp.nus.edu.sg/cs/people/chuats/"><img style="max-width:none" class="mx-auto" src="img/CHUA-Tat-Seng.png" alt=""></a>
+      <h4><a href="https://www.comp.nus.edu.sg/cs/people/chuats/">Tat-Seng Chua</a></h4>
+      <p class="text-muted" style="display:inline">KITHCT Chair Professor</p>
+<p class="text-muted">National University of Singapore</p>
+      <ul class="list-inline social-buttons">
+      </ul>
+    </div>
+  </div> 
 
   <div class="col-sm-4">
           <div class="team-member">
@@ -446,7 +388,7 @@ Node Attributes</a>. <br>Tu Anh Dinh, Jeroen den Boef, Joran Cornelisse, and Pau
             </ul>
           </div>
 
-    <a href="https://clustrmaps.com/site/1bl2d" title="Visit tracker"><img src="//www.clustrmaps.com/map_v2.png?d=thhPDQSm423zwtB8ZIAogRPZmStgsjhGhhdPEn8720Q&cl=ffffff"></a>
+    <a href="https://clustrmaps.com/site/1bz3v"  title="Visit tracker"><img src="//www.clustrmaps.com/map_v2.png?d=-ZBgbZSzEVBDAQW0vE6xZsj8OBOV3X8vzx6DT4DKZHI&cl=ffffff" /></a>
     <!-- <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=thhPDQSm423zwtB8ZIAogRPZmStgsjhGhhdPEn8720Q&cl=ffffff&w=a"></script> -->
           
           </div>
